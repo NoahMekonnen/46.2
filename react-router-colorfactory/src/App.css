@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.ColorPage{
+  height: 100vh;
+  width: vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+.ColorPage-Text{
+  color: white;
+  font-size: 36px;
+}
