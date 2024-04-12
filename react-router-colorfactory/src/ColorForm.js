@@ -29,9 +29,9 @@ const ColorForm = ({ colors, setColors }) => {
         <div className="ColorForm">
             <form onSubmit={handleSubmit} className="ColorForm-form">
                 <label htmlFor="color-name">Color name:</label>
-                <input id="color-name" onChange={handleNameChange} />
+                <input id="color-name" onChange={handleNameChange} value={formColor['colorName']} />
                 <label htmlFor="color-value">Color value:</label>
-                <input id="color-value" onChange={handleColorChange}  type="color" />
+                <input id="color-value" onChange={handleColorChange} value ={formColor['colorValue']} type="color" />
                 <button>Add this color</button>
             </form>
         </div>

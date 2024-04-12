@@ -12,6 +12,13 @@ const ColorPage = ({ colors }) => {
             navigate('/colors')
         }
     })
+
+    if (!finalColorDict) {
+        return(
+            <div></div>
+        )
+    }
+    
     return (
         <div className="ColorPage" style={{ backgroundColor: finalColorDict[color] }}>
             <p className="ColorPage-Text">THIS IS {color.toUpperCase()}</p>
