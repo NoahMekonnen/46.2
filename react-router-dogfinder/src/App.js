@@ -10,7 +10,7 @@ function App({dogs}) {
   return (
     <div className="App">
       <BrowserRouter>
-      <Nav dogs={dogNames}/>
+      <Nav dogNames={dogNames}/>
         <Switch>
           <Route exact path="/dogs/:name">
             <DogDetails dogs={dogs} />

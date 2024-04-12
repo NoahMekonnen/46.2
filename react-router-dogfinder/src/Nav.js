@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
-const Nav = ({dogs}) =>{
+const Nav = ({dogNames}) =>{
 
     return(
-       <nav>
-        {dogs.map(dog => <Link to={`/${dog}`}>
-            {dog}
+       <nav className="Nav">
+        {dogNames.map(dogName => <Link to={`/dogs/${dogName}`} className="Nav-Link">
+            {dogName}
             </Link>)}
        </nav>
     )

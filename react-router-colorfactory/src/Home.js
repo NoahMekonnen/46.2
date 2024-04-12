@@ -9,11 +9,12 @@ const Home = ({colors, setColors}) =>{
             <Link to="/colors/new">Add Color</Link>
             <p>Please Select a Color</p>
         <ul>
-            {console.log(colors,"HOIIIIIII")}
-            {Object.keys(colors).map((color,idx) => <li key={idx}><Link to={`/colors/${color}`}>
-                {color}
+            {colors.map((colorDict,idx) => 
+            <li key={idx}><Link to={`/colors/${Object.keys(colorDict)[0]}`}>
+                {Object.keys(colorDict)[0]}
             </Link>
-            </li>)}
+            </li>
+)}
         </ul>
         </div>
     )

@@ -6,7 +6,7 @@ import ColorPage from './ColorPage';
 import { useState } from 'react';
 
 function App() {
-  const [colors, setColors] = useState({blue: 'blue', green: 'green', yellow:'yellow'})
+  const [colors, setColors] = useState([{blue: 'blue'}, {green: 'green'}, {yellow:'yellow'}])
 
   return (
     <div className="App">
